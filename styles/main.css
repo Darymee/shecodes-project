@@ -231,8 +231,15 @@ p {
     flex-direction: column;
     gap: 15px;
   }
+
   .hero-text {
     width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    background: linear-gradient(to top, #1b1b1b 50%, #202020 50%);
   }
 }
 
@@ -245,7 +252,9 @@ p {
     margin-top: 80px;
     font-size: 36px;
   }
-  .hero-text {
+  .hero-text,
+  .about-text,
+  .camera-name {
     font-size: 16px;
   }
 
@@ -254,5 +263,22 @@ p {
   }
   .footer {
     padding: 38px 40px;
+  }
+
+  .header-container {
+    padding: 38px 40px;
+  }
+
+  .about-description {
+    padding: 50px 40px 92px;
+  }
+
+  .about-title {
+    font-size: 36px;
+    max-width: fit-content;
+  }
+
+  .camera-section img {
+    width: 50px;
   }
 }
