@@ -1,6 +1,78 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+:root {
+  --text-color: #ffffff;
+  --secondary-color: #272142;
+  --accent-color: #f65282;
+  --text-font: "Roboto", sans-serif;
+  --button-font: "Montserrat", sans-serif;
+}
 
-body {
-  font-family: "Roboto", sans-serif;
+h1,
+h2,
+h3,
+p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.hero {
+  width: 100%;
+  padding: 276px 140px 301px;
+  background-image: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero-sub-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+
+  margin-bottom: 25px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-main-title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 1.17;
+
+  margin-bottom: 25px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-text {
+  width: 460px;
+  margin: 0 auto 48px;
+  text-align: center;
+  line-height: 1.67;
+  font-size: 18px;
+}
+
+.hero-btn {
+  font-family: var(--button-font);
+  font-weight: 700;
+
+  padding: 18px 40px;
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+  line-height: 1.21;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+  background-color: var(--text-color);
+  transition: all 350ms ease-in-out;
+}
+
+.hero-btn:hover {
+  color: #f65282;
+  box-shadow: 1px 1px 18px -7px rgba(255, 255, 255, 0.75);
 }
