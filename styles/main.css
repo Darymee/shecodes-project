@@ -4,6 +4,8 @@
   --accent-color: #f65282;
   --text-font: "Roboto", sans-serif;
   --button-font: "Montserrat", sans-serif;
+  --box-shadow: 1px 1px 18px -7px rgba(255, 255, 255, 0.75);
+  --text-shadow: 1px 1px 18px rgba(255, 255, 255, 0.75);
 }
 
 h1,
@@ -14,9 +16,44 @@ p {
   color: var(--text-color);
 }
 
+.header {
+  padding: 38px 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+.styled-nav {
+  flex-grow: 0;
+}
+
+.btn-nav {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-nav i {
+  color: var(--text-color);
+}
+
+.nav-item-styled a {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  transition: all 350ms ease-in-out;
+}
+
+.nav-item-styled a:hover {
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
+}
+
 .hero {
   width: 100%;
-  padding: 276px 140px 301px;
+  padding: 0 140px 301px;
   background-image: url("/images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +66,7 @@ p {
   font-size: 24px;
   line-height: 1.17;
 
+  margin-top: 158px;
   margin-bottom: 25px;
 
   text-transform: uppercase;
@@ -74,11 +112,11 @@ p {
 
 .hero-btn:hover {
   color: #f65282;
-  box-shadow: 1px 1px 18px -7px rgba(255, 255, 255, 0.75);
+  box-shadow: var(--box-shadow);
 }
 
 .gallery {
-  padding: 100px 0;
+  padding: 100px 128px;
   background-color: #1b1b1b;
 }
 
@@ -87,16 +125,70 @@ p {
   height: 100%;
 }
 
-@media (max-width: 992px) {
-  .hero {
-    padding: 100px 40px 100px;
-  }
+.footer {
+  padding: 38px 140px;
+  background-color: #282323;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .hero-main-title {
-    font-size: 36px;
+.social-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  padding: 0 15px;
+}
+
+.social-item a {
+  color: var(--text-color);
+  transition: all 350ms ease-in-out;
+}
+
+.social-item a:hover {
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
+}
+
+.copyright-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  margin: 0;
+}
+
+@media (max-width: 659px) {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
   }
   .hero-text {
     width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 0px 40px 100px;
+  }
+
+  .hero-main-title {
+    margin-top: 80px;
+    font-size: 36px;
+  }
+  .hero-text {
     font-size: 16px;
+  }
+
+  .gallery {
+    padding: 50px 40px;
+  }
+  .footer {
+    padding: 38px 40px;
   }
 }
