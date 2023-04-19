@@ -17,7 +17,8 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
@@ -239,18 +240,6 @@ p {
   margin-bottom: 166px;
 }
 
-@media (max-width: 659px) {
-  .footer {
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero-text {
-    width: auto;
-  }
-}
-
 .active-link {
   text-shadow: var(--text-shadow);
 }
@@ -263,7 +252,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   color: var(--accent-color);
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 .contact-link {
@@ -274,9 +263,25 @@ p {
   transition: all 350ms ease-in-out;
 }
 
+.contact-link span {
+  margin-left: 10px;
+}
+
 .contact-link:hover {
   color: var(--accent-color);
   text-shadow: var(--text-shadow);
+}
+
+@media (max-width: 659px) {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-text {
+    width: auto;
+  }
 }
 
 @media (max-width: 767px) {
