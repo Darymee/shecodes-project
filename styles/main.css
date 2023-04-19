@@ -23,6 +23,12 @@ h2 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 72px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 p {
   line-height: 1.67;
   font-size: 18px;
@@ -83,9 +89,6 @@ p {
 }
 
 .hero-main-title {
-  font-size: 72px;
-  line-height: 1.17;
-
   margin-bottom: 25px;
 }
 
@@ -193,6 +196,7 @@ p {
   margin-bottom: 34px;
   font-size: 64px;
   line-height: 1.17;
+  text-align: left;
 }
 
 .about-text {
@@ -233,9 +237,6 @@ p {
 .gallery-title {
   text-align: center;
   margin-bottom: 166px;
-
-  font-size: 72px;
-  line-height: 1.17;
 }
 
 @media (max-width: 659px) {
@@ -248,6 +249,34 @@ p {
   .hero-text {
     width: auto;
   }
+}
+
+.active-link {
+  text-shadow: var(--text-shadow);
+}
+
+.contact-title {
+  margin-bottom: 142px;
+}
+
+.contact-sub-title {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.contact-link {
+  font-size: 18px;
+  line-height: 1.67;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 350ms ease-in-out;
+}
+
+.contact-link:hover {
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
 }
 
 @media (max-width: 767px) {
@@ -307,8 +336,9 @@ p {
     margin-bottom: 60px;
     font-size: 36px;
   }
-}
 
-.active-link {
-  text-shadow: var(--text-shadow);
+  .contact-title {
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
 }
