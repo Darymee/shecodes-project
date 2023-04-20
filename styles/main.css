@@ -136,9 +136,30 @@ p {
 .footer {
   padding: 38px 140px;
   background-color: #282323;
+}
+
+.footer-wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+}
+
+.signature {
+  font-size: 14px;
+  text-align: center;
+}
+
+.signature a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: var(--text-shadow);
+  transition: all 350ms ease-in-out;
+}
+
+.signature a:hover {
+  color: var(--accent-color);
 }
 
 .social-list {
@@ -273,7 +294,7 @@ p {
 }
 
 @media (max-width: 659px) {
-  .footer {
+  .footer-wrapp {
     justify-content: center;
     flex-direction: column;
     gap: 15px;
