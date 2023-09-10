@@ -274,7 +274,11 @@ p {
   line-height: 1.14;
   color: var(--accent-color);
   margin: 0 0 5px;
+
+
 }
+
+
 
 .contact-link {
   font-size: 18px;
